@@ -11,7 +11,7 @@ namespace Vozila.DAL
     {
         protected override void Seed(VehicleContext context)
         {
-            var students = new List<Make>
+            var makes = new List<Make>
             {
             new Make{Id=1,Name="BMW",Abrv="BMW"},
             new Make{Id=2,Name="Ford",Abrv="Ford"},
@@ -20,9 +20,9 @@ namespace Vozila.DAL
             new Make{Id=5,Name="General Motors",Abrv="GM"}
             };
 
-            students.ForEach(s => context.Makes.Add(s));
+            makes.ForEach(s => context.Makes.Add(s));
             context.SaveChanges();
-            var courses = new List<Model>
+            var models = new List<Model>
             {
             new Model{Id=1,MakeId=1,Name="128",Abrv="BMW"},
             new Model{Id=2,MakeId=1,Name="325",Abrv="BMW"},
@@ -40,7 +40,7 @@ namespace Vozila.DAL
             new Model{Id=2,MakeId=5,Name="Buick",Abrv="GM"},
             new Model{Id=3,MakeId=5,Name="Cadillac",Abrv="GM"}
             };
-            courses.ForEach(s => context.Models.Add(s));
+            models.ForEach(s => context.Models.Add(s));
             context.SaveChanges();
         }
     }
