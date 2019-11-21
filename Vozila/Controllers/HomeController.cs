@@ -20,14 +20,14 @@ namespace Vozila.Controllers
             return View();
         }
 
-        public ActionResult VehicleMake()
+        public ActionResult Make()
         {
             ViewBag.Message = "Your Vehicle Make";
 
             return View();
         }
 
-        public ActionResult VehicleModel()
+        public ActionResult Model()
         {
             ViewBag.Message = "Your Vehicle Model";
 
