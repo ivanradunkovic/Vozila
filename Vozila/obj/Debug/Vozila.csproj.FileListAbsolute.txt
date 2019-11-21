@@ -48,6 +48,8 @@ C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\roslyn\vbc.rsp
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\roslyn\VBCSCompiler.exe
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Antlr3.Runtime.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\EntityFramework.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\EntityFramework.SqlServer.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Newtonsoft.Json.dll
@@ -59,6 +61,8 @@ C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\System.Web.WebPages.Deployment.d
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\System.Web.WebPages.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\System.Web.WebPages.Razor.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\WebGrease.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\EntityFramework.xml
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\EntityFramework.SqlServer.xml
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\System.Web.Helpers.xml
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\System.Web.Mvc.xml
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\System.Web.Optimization.xml
@@ -72,8 +76,3 @@ C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.CodeDom.Providers.DotN
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csproj.CopyComplete
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.pdb
-C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\EntityFramework.dll
-C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\EntityFramework.SqlServer.dll
-C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\EntityFramework.xml
-C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\EntityFramework.SqlServer.xml
-C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csprojAssemblyReference.cache
