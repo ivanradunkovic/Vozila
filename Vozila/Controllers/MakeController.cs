@@ -16,12 +16,16 @@ namespace Vozila.Controllers
         private VehicleContext db = new VehicleContext();
 
         // GET: Make
-        public ActionResult Index(string sortOrder)
+        public ViewResult Index(string sortOrder, string searchString)
         {
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
             var makes = from s in db.Makes
                            select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                makes = makes.Where(s => s.Name.Contains(searchString)
+                                       || s.Name.Contains(searchString));
+            }
             switch (sortOrder)
             {
                 case "name_desc":
