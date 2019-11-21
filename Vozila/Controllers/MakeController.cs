@@ -16,9 +16,22 @@ namespace Vozila.Controllers
         private VehicleContext db = new VehicleContext();
 
         // GET: Make
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder)
         {
-            return View(db.Makes.ToList());
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
+            var makes = from s in db.Makes
+                           select s;
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    makes = makes.OrderByDescending(s => s.Name);
+                    break;
+                default:
+                    makes = makes.OrderBy(s => s.Name);
+                    break;
+            }
+            return View(makes.ToList());
         }
 
         // GET: Make/Details/5
