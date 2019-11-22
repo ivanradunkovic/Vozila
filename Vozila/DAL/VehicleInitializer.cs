@@ -42,6 +42,12 @@ namespace Vozila.DAL
             };
             models.ForEach(s => context.Models.Add(s));
             context.SaveChanges();
+            var makemodels = new List<MakeModel>
+            {
+            new MakeModel{MakeId=1,ModelId=1},
+            };
+            makemodels.ForEach(s => context.MakeModels.Add(s));
+            context.SaveChanges();
         }
     }
 }
