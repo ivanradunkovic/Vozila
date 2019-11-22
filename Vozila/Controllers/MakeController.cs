@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vozila.DAL;
 using Vozila.Models;
+using PagedList;
 
 namespace Vozila.Controllers
 {
@@ -16,9 +17,20 @@ namespace Vozila.Controllers
         private VehicleContext db = new VehicleContext();
 
         // GET: Make
-        public ViewResult Index(string sortOrder, string searchString)
+        public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
+            ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
             var makes = from s in db.Makes
                            select s;
             if (!String.IsNullOrEmpty(searchString))
@@ -35,7 +47,9 @@ namespace Vozila.Controllers
                     makes = makes.OrderBy(s => s.Name);
                     break;
             }
-            return View(makes.ToList());
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+            return View(makes.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: Make/Details/5
