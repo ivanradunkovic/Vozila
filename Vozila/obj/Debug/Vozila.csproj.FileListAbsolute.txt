@@ -76,4 +76,8 @@ C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.CodeDom.Providers.DotN
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csproj.CopyComplete
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.pdb
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\PagedList.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\PagedList.Mvc.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\PagedList.xml
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\PagedList.Mvc.xml
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csprojAssemblyReference.cache
