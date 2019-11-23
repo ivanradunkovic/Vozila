@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Vozila.DAL;
 using Vozila.Models;
+using PagedList;
 
 namespace Vozila.Controllers
 {
@@ -16,9 +17,47 @@ namespace Vozila.Controllers
         private VehicleContext db = new VehicleContext();
 
         // GET: Model
-        public ActionResult Index()
+        public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
-            return View(db.Models.ToList());
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "MakeId_desc" : "";
+            ViewBag.DateSortParm = sortOrder == "Name" ? "name_desc" : "Name";
+            ViewBag.DateSortParm = sortOrder == "Abrv" ? "abrv_desc" : "Abrv";
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
+            var models = from s in db.Models
+                        select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                models = models.Where(s => s.Name.Contains(searchString)
+                                       || s.Name.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "MakeId_desc":
+                    models = models.OrderByDescending(s => s.MakeId);
+                    break;
+                case "name_desc":
+                    models = models.OrderByDescending(s => s.Name);
+                    break;
+                case "abrv_desc":
+                    models = models.OrderByDescending(s => s.Abrv);
+                    break;
+                default:
+                    models = models.OrderBy(s => s.Id);
+                    break;
+            }
+            int pageSize = 10;
+            int pageNumber = (page ?? 1);
+            return View(models.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: Model/Details/5
@@ -49,11 +88,19 @@ namespace Vozila.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,MakeId,Name,Abrv")] Model model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.Models.Add(model);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.Models.Add(model);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+            }
+            catch (DataException /* dex */)
+            {
+                //Log the error (uncomment dex variable name and add a line here to write a log.
+                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
             }
 
             return View(model);

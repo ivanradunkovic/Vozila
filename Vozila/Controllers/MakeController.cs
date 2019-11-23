@@ -48,10 +48,10 @@ namespace Vozila.Controllers
                     makes = makes.OrderByDescending(s => s.Abrv);
                     break;
                 default:
-                    makes = makes.OrderBy(s => s.Name);
+                    makes = makes.OrderBy(s => s.Id);
                     break;
             }
-            int pageSize = 3;
+            int pageSize = 4;
             int pageNumber = (page ?? 1);
             return View(makes.ToPagedList(pageNumber, pageSize));
         }
