@@ -21,6 +21,7 @@ namespace Vozila.Controllers
         {
             ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.DateSortParm = sortOrder == "Abrv" ? "abrv_desc" : "Abrv";
             if (searchString != null)
             {
                 page = 1;
@@ -42,6 +43,9 @@ namespace Vozila.Controllers
             {
                 case "name_desc":
                     makes = makes.OrderByDescending(s => s.Name);
+                    break;
+                case "abrv_desc":
+                    makes = makes.OrderByDescending(s => s.Abrv);
                     break;
                 default:
                     makes = makes.OrderBy(s => s.Name);
