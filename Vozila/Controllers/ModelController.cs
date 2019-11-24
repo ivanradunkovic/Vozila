@@ -38,7 +38,7 @@ namespace Vozila.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 models = models.Where(s => s.Name.Contains(searchString)
-                                       || s.Name.Contains(searchString));
+                                       || s.Abrv.Contains(searchString));
             }
             switch (sortOrder)
             {
