@@ -10,7 +10,9 @@
 *.userosscache
 *.sln.docstates
 # ignore a single file
-App_Data
+
+#Ignore folder named 'Scripts'
+Scripts/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
