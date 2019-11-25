@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# CA3147: Mark Verb Handlers With Validate Antiforgery Token
+dotnet_diagnostic.CA3147.severity = silent
+
+# CA1031: Do not catch general exception types
+dotnet_diagnostic.CA1031.severity = silent
+
+# IDE0044: Add readonly modifier
+dotnet_style_readonly_field = true:silent

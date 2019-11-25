@@ -9,12 +9,11 @@ namespace Vozila.DAL
 
         public VehicleContext() : base("VehicleContext")
         {
-        }
 
+        }
         public DbSet<Make> Makes { get; set; }
         public DbSet<Model> Models { get; set; }
         public DbSet<MakeModel> MakeModels { get; set; }
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

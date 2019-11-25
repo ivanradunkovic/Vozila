@@ -21,7 +21,7 @@ namespace Vozila.Controllers
         {
             ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            ViewBag.DateSortParm = sortOrder == "Abrv" ? "abrv_desc" : "Abrv";
+            ViewBag.AbrvSortParm = sortOrder == "Abrv" ? "abrv_desc" : "Abrv";
             if (searchString != null)
             {
                 page = 1;

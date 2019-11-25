@@ -87,3 +87,11 @@ C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csproj.CopyComplete
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.pdb
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csprojAssemblyReference.cache
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Owin.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\AutoMapper.dll
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\AutoMapper.pdb
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\AutoMapper.xml

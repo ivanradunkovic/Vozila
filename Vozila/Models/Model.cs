@@ -10,7 +10,6 @@ namespace Vozila.Models
         public int MakeId { get; set; }
         public string Name { get; set; }
         public string Abrv { get; set; }
-
         public virtual ICollection<MakeModel> MakeModels { get; set; }
     }
 }

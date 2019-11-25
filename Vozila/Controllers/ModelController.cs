@@ -20,9 +20,9 @@ namespace Vozila.Controllers
         public ViewResult Index(string sortOrder, string currentFilter, string searchString, int? page)
         {
             ViewBag.CurrentSort = sortOrder;
-            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "makeId_desc" : "";
-            ViewBag.DateSortParm = sortOrder == "Name" ? "name_desc" : "Name";
-            ViewBag.DateSortParm = sortOrder == "Abrv" ? "abrv_desc" : "Abrv";
+            ViewBag.MakeIdSortParm = String.IsNullOrEmpty(sortOrder) ? "makeId_desc" : "";
+            ViewBag.NameSortParm = sortOrder == "Name" ? "name_desc" : "Name";
+            ViewBag.AbrvSortParm = sortOrder == "Abrv" ? "abrv_desc" : "Abrv";
             if (searchString != null)
             {
                 page = 1;
