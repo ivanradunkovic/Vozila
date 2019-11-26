@@ -16,7 +16,7 @@ namespace Vozila
             {
                 if (User.Identity.IsAuthenticated)
                 {
-                    StatusText.Text = string.Format("Hello {0}!!", User.Identity.GetUserName());
+                    StatusText.Text = string.Format("Hello {0}", User.Identity.GetUserName());
                     LoginStatus.Visible = true;
                     LogoutButton.Visible = true;
                 }
@@ -39,7 +39,7 @@ namespace Vozila
                 var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
 
                 authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
-                Response.Redirect("~/Login.aspx");
+                Response.Redirect("/Home");
             }
             else
             {
@@ -52,7 +52,7 @@ namespace Vozila
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
             authenticationManager.SignOut();
-            Response.Redirect("~/Login.aspx");
+            Response.Redirect("/Home");
         }
     }
 }
