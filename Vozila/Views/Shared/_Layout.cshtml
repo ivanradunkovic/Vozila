@@ -28,14 +28,17 @@
                 </button>
                 @Html.ActionLink("Vehicle", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">               
-                    <li>@Html.ActionLink("About application", "About", "Home")</li>
-                    <li>@Html.ActionLink("Vehicle Make", "Index", "Make")</li>
-                    <li>@Html.ActionLink("Vehicle Model", "Index", "Model")</li>
-                    <li>@Html.ActionLink("About author", "AboutAuthor", "Home")</li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("About application", "About", "Home")</li>
+                <li>@Html.ActionLink("Vehicle Make", "Index", "Make")</li>
+                <li>@Html.ActionLink("Vehicle Model", "Index", "Model")</li>
+                <li>@Html.ActionLink("About author", "AboutAuthor", "Home")</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li style="color: white; line-height: 50px;">
+                <li>@Html.ActionLink("Login", "Login.aspx", "Login.aspx")</li>
+                <li>@Html.ActionLink("Register", "Register.aspx", "Register.aspx")</li>
+            </ul>
         </div>
     </div>
     <div class="container body-content">
