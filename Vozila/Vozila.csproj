@@ -212,36 +212,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MakeController.cs" />
     <Compile Include="Controllers\ModelController.cs" />
+    <Compile Include="Controllers\RolesAdminController.cs" />
+    <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="DAL\VehicleContext.cs" />
     <Compile Include="DAL\VehicleInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AdminViewModel.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MakeModel.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Make.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -258,9 +253,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Login.aspx" />
     <Content Include="readme.txt" />
-    <Content Include="Register.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -286,9 +279,7 @@
     <Content Include="Views\Model\Edit.cshtml" />
     <Content Include="Views\Model\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\User\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -302,6 +293,41 @@
     <None Include="packages.config" />
     <Content Include="Views\Make\Admin.cshtml" />
     <Content Include="Views\Shared\Index.cshtml" />
+    <Content Include="Views\AccountViewModels\Create.cshtml" />
+    <Content Include="Views\AccountViewModels\Delete.cshtml" />
+    <Content Include="Views\AccountViewModels\Details.cshtml" />
+    <Content Include="Views\AccountViewModels\Edit.cshtml" />
+    <Content Include="Views\AccountViewModels\Index.cshtml" />
+    <Content Include="Views\AdminViewModel\Create.cshtml" />
+    <Content Include="Views\AdminViewModel\Delete.cshtml" />
+    <Content Include="Views\AdminViewModel\Details.cshtml" />
+    <Content Include="Views\AdminViewModel\Edit.cshtml" />
+    <Content Include="Views\AdminViewModel\Index.cshtml" />
+    <Content Include="Views\IdentityModels\Create.cshtml" />
+    <Content Include="Views\IdentityModels\Delete.cshtml" />
+    <Content Include="Views\IdentityModels\Details.cshtml" />
+    <Content Include="Views\IdentityModels\Edit.cshtml" />
+    <Content Include="Views\IdentityModels\Index.cshtml" />
+    <Content Include="Views\ManageViewModels\Create.cshtml" />
+    <Content Include="Views\ManageViewModels\Delete.cshtml" />
+    <Content Include="Views\ManageViewModels\Details.cshtml" />
+    <Content Include="Views\ManageViewModels\Edit.cshtml" />
+    <Content Include="Views\ManageViewModels\Index.cshtml" />
+    <Content Include="Views\Account\DisplayEmail.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\RolesAdmin\Create.cshtml" />
+    <Content Include="Views\RolesAdmin\Delete.cshtml" />
+    <Content Include="Views\RolesAdmin\Details.cshtml" />
+    <Content Include="Views\RolesAdmin\Edit.cshtml" />
+    <Content Include="Views\RolesAdmin\Index.cshtml" />
+    <Content Include="Views\UserAdmin\Create.cshtml" />
+    <Content Include="Views\UserAdmin\Delete.cshtml" />
+    <Content Include="Views\UserAdmin\Details.cshtml" />
+    <Content Include="Views\UserAdmin\Edit.cshtml" />
+    <Content Include="Views\UserAdmin\Index.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

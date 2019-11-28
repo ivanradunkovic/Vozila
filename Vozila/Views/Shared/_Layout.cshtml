@@ -33,12 +33,13 @@
                 <li>@Html.ActionLink("Vehicle Make", "Index", "Make")</li>
                 <li>@Html.ActionLink("Vehicle Model", "Index", "Model")</li>
                 <li>@Html.ActionLink("About author", "AboutAuthor", "Home")</li>
+                @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    <li>@Html.ActionLink("RolesAdmin", "Index", "RolesAdmin")</li>
+                    <li>@Html.ActionLink("UsersAdmin", "Index", "UsersAdmin")</li>
+                }
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li style="color: white; line-height: 50px;">
-                <li>@Html.ActionLink("Login", "Login.aspx", "Login.aspx")</li>
-                <li>@Html.ActionLink("Register", "Register.aspx", "Register.aspx")</li>
-            </ul>
+            @Html.Partial("_LoginPartial")
         </div>
     </div>
     <div class="container body-content">

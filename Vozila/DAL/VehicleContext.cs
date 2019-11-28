@@ -1,6 +1,7 @@
 ﻿using Vozila.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Data.Entity.Infrastructure;
 
 namespace Vozila.DAL
 {
@@ -16,7 +17,7 @@ namespace Vozila.DAL
         public DbSet<MakeModel> MakeModels { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Conventions.Remove<IncludeMetadataConvention>();
         }
     }
 }
