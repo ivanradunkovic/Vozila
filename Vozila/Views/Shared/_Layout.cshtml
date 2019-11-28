@@ -6,16 +6,6 @@
     <title>@ViewBag.Title - Vehicle</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script type="text/javascript">
-        var appInsights=window.appInsights||function(config){
-            function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
-        }({
-            instrumentationKey:"615aadc5-8508-46e7-aa93-713181a155ae"
-        });
-
-        window.appInsights=appInsights;
-        appInsights.trackPageView();
-    </script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -29,14 +19,14 @@
                 @Html.ActionLink("Vehicle", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("About application", "About", "Home")</li>
+                <li>@Html.ActionLink("About Application", "About", "Home")</li>
                 <li>@Html.ActionLink("Vehicle Make", "Index", "Make")</li>
                 <li>@Html.ActionLink("Vehicle Model", "Index", "Model")</li>
-                <li>@Html.ActionLink("About author", "AboutAuthor", "Home")</li>
+                <li>@Html.ActionLink("About Author", "AboutAuthor", "Home")</li>
                 @if (Request.IsAuthenticated && User.IsInRole("Admin"))
                 {
-                    <li>@Html.ActionLink("RolesAdmin", "Index", "RolesAdmin")</li>
-                    <li>@Html.ActionLink("UsersAdmin", "Index", "UsersAdmin")</li>
+                    <li>@Html.ActionLink("Roles", "Index", "RolesAdmin")</li>
+                    <li>@Html.ActionLink("Users", "Index", "UsersAdmin")</li>
                 }
             </ul>
             @Html.Partial("_LoginPartial")

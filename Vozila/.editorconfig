@@ -8,3 +8,9 @@ dotnet_diagnostic.CA1031.severity = silent
 
 # IDE0044: Add readonly modifier
 dotnet_style_readonly_field = true:silent
+
+# CA1825: Avoid zero-length array allocations.
+dotnet_diagnostic.CA1825.severity = silent
+
+# CS0618: Type or member is obsolete
+dotnet_diagnostic.CS0618.severity = silent
