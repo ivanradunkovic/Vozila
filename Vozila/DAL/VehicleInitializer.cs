@@ -15,9 +15,9 @@ namespace Vozila.DAL
             new Make{Id=4,Name="Hyundai",Abrv="Hyundai"},
             new Make{Id=5,Name="General Motors",Abrv="GM"}
             };
-
             makes.ForEach(s => context.Makes.Add(s));
             context.SaveChanges();
+
             var models = new List<Model>
             {
             new Model{Id=1,MakeId=1,Name="128",Abrv="BMW"},
@@ -37,12 +37,6 @@ namespace Vozila.DAL
             new Model{Id=15,MakeId=5,Name="Cadillac",Abrv="GM"}
             };
             models.ForEach(s => context.Models.Add(s));
-            context.SaveChanges();
-            var makemodels = new List<MakeModel>
-            {
-            new MakeModel{MakeId=1,ModelId=1},
-            };
-            makemodels.ForEach(s => context.MakeModels.Add(s));
             context.SaveChanges();
         }
     }

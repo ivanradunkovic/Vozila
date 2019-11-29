@@ -6,7 +6,6 @@ namespace Vozila.DAL
 {
     public class VehicleContext : DbContext
     {
-
         public VehicleContext() : base("VehicleContext")
         {
 
