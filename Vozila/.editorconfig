@@ -14,3 +14,9 @@ dotnet_diagnostic.CA1825.severity = silent
 
 # CS0618: Type or member is obsolete
 dotnet_diagnostic.CS0618.severity = silent
+
+# IDE0060: Remove unused parameter
+dotnet_code_quality_unused_parameters = all:silent
+
+# IDE0059: Unnecessary assignment of a value
+csharp_style_unused_value_assignment_preference = discard_variable:silent
