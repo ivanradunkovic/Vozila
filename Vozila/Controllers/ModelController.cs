@@ -58,7 +58,7 @@ namespace Vozila.Controllers
             return View(models.ToPagedList(pageNumber, pageSize));
         }
 
-        // GET: Model/Details/5
+        // GET: Model/Details
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace Vozila.Controllers
             return View(model);
         }
 
-        // GET: Model/Edit/5
+        // GET: Model/Edit
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -119,7 +119,7 @@ namespace Vozila.Controllers
             return View(model);
         }
 
-        // POST: Model/Edit/5
+        // POST: Model/Edit
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -135,7 +135,7 @@ namespace Vozila.Controllers
             return View(model);
         }
 
-        // GET: Model/Delete/5
+        // GET: Model/Delete
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -150,7 +150,7 @@ namespace Vozila.Controllers
             return View(model);
         }
 
-        // POST: Model/Delete/5
+        // POST: Model/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

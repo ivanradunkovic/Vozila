@@ -16,8 +16,8 @@ namespace Vozila.Controllers
     {
         public RolesAdminController()
         {
-        }
 
+        }
         public RolesAdminController(ApplicationUserManager userManager,
             ApplicationRoleManager roleManager)
         {
@@ -51,7 +51,6 @@ namespace Vozila.Controllers
             }
         }
 
-        //
         // GET: /Roles/
         [HttpGet]
         public ActionResult Index()
@@ -59,8 +58,7 @@ namespace Vozila.Controllers
             return View(RoleManager.Roles);
         }
 
-        //
-        // GET: /Roles/Details/5
+        // GET: /Roles/Details
         [HttpGet]
         public async Task<ActionResult> Details(string id)
         {
@@ -86,7 +84,6 @@ namespace Vozila.Controllers
             return View(role);
         }
 
-        //
         // GET: /Roles/Create
         [HttpGet]
         public ActionResult Create()
@@ -94,7 +91,6 @@ namespace Vozila.Controllers
             return View();
         }
 
-        //
         // POST: /Roles/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -114,7 +110,6 @@ namespace Vozila.Controllers
             return View();
         }
 
-        //
         // GET: /Roles/Edit/Admin
         [HttpGet]
         public async Task<ActionResult> Edit(string id)
@@ -132,8 +127,7 @@ namespace Vozila.Controllers
             return View(roleModel);
         }
 
-        //
-        // POST: /Roles/Edit/5
+        // POST: /Roles/Edit
         [HttpPost]
 
         [ValidateAntiForgeryToken]
@@ -149,8 +143,7 @@ namespace Vozila.Controllers
             return View();
         }
 
-        //
-        // GET: /Roles/Delete/5
+        // GET: /Roles/Delete
         [HttpGet]
         public async Task<ActionResult> Delete(string id)
         {
@@ -166,8 +159,7 @@ namespace Vozila.Controllers
             return View(role);
         }
 
-        //
-        // POST: /Roles/Delete/5
+        // POST: /Roles/Delete
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]

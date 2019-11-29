@@ -34,7 +34,6 @@ namespace Vozila.Controllers
             }
         }
 
-        //
         // GET: /Account/Login
         [HttpGet]
         [AllowAnonymous]
@@ -55,7 +54,6 @@ namespace Vozila.Controllers
             private set { _signInManager = value; }
         }
 
-        //
         // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
@@ -67,7 +65,7 @@ namespace Vozila.Controllers
                 return View(model);
             }
 
-            // This doen't count login failures towards lockout only two factor authentication
+            // This dosen't count login failures towards lockout only two factor authentication
             // To enable password failures to trigger lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
@@ -85,7 +83,6 @@ namespace Vozila.Controllers
             }
         }
 
-        //
         // GET: /Account/Register
         [HttpGet]
         [AllowAnonymous]
@@ -94,7 +91,6 @@ namespace Vozila.Controllers
             return View();
         }
 
-        //
         // POST: /Account/Register
         [HttpPost]
         [AllowAnonymous]
@@ -115,12 +111,9 @@ namespace Vozila.Controllers
                 }
                 AddErrors(result);
             }
-
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
-        //
         // GET: /Account/ConfirmEmail
         [HttpGet]
         [AllowAnonymous]
@@ -134,7 +127,6 @@ namespace Vozila.Controllers
             return View(result.Succeeded ? "ConfirmEmail" : "Error");
         }
 
-        //
         // POST: /Account/LogOff
         [HttpPost]
         [ValidateAntiForgeryToken]

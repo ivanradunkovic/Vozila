@@ -14,8 +14,8 @@ namespace Vozila.Controllers
     {
         public UsersAdminController()
         {
-        }
 
+        }
         public UsersAdminController(ApplicationUserManager userManager, ApplicationRoleManager roleManager)
         {
             UserManager = userManager;
@@ -48,16 +48,14 @@ namespace Vozila.Controllers
             }
         }
 
-        //
-        // GET: /Users/
+        // GET: /Users
         [HttpGet]
         public async Task<ActionResult> Index()
         {
             return View(await UserManager.Users.ToListAsync());
         }
 
-        //
-        // GET: /Users/Details/5
+        // GET: /Users/Details
         [HttpGet]
         public async Task<ActionResult> Details(string id)
         {
@@ -72,7 +70,6 @@ namespace Vozila.Controllers
             return View(user);
         }
 
-        //
         // GET: /Users/Create
         [HttpGet]
         public async Task<ActionResult> Create()
@@ -82,7 +79,6 @@ namespace Vozila.Controllers
             return View();
         }
 
-        //
         // POST: /Users/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -120,8 +116,7 @@ namespace Vozila.Controllers
             return View();
         }
 
-        //
-        // GET: /Users/Edit/1
+        // GET: /Users/Edit
         [HttpGet]
         public async Task<ActionResult> Edit(string id)
         {
@@ -150,8 +145,7 @@ namespace Vozila.Controllers
             });
         }
 
-        //
-        // POST: /Users/Edit/5
+        // POST: /Users/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit([Bind(Include = "Email,Id")] EditUserViewModel editUser, params string[] selectedRole)
@@ -191,8 +185,7 @@ namespace Vozila.Controllers
             return View();
         }
 
-        //
-        // GET: /Users/Delete/5
+        // GET: /Users/Delete
         [HttpGet]
         public async Task<ActionResult> Delete(string id)
         {
@@ -208,8 +201,7 @@ namespace Vozila.Controllers
             return View(user);
         }
 
-        //
-        // POST: /Users/Delete/5
+        // POST: /Users/Delete
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]

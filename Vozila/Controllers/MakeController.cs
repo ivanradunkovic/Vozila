@@ -54,7 +54,7 @@ namespace Vozila.Controllers
             return View(makes.ToPagedList(pageNumber, pageSize));
         }
 
-        // GET: Make/Details/5
+        // GET: Make/Details
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -96,11 +96,10 @@ namespace Vozila.Controllers
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
             }
-
             return View(make);
         }
 
-        // GET: Make/Edit/5
+        // GET: Make/Edit
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -115,7 +114,7 @@ namespace Vozila.Controllers
             return View(make);
         }
 
-        // POST: Make/Edit/5
+        // POST: Make/Edit
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -131,7 +130,7 @@ namespace Vozila.Controllers
             return View(make);
         }
 
-        // GET: Make/Delete/5
+        // GET: Make/Delete
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -146,7 +145,7 @@ namespace Vozila.Controllers
             return View(make);
         }
 
-        // POST: Make/Delete/5
+        // POST: Make/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
