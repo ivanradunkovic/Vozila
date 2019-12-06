@@ -2,7 +2,7 @@
 
 namespace Service
 {
-    public class Class1
+    abstract class Class1
     {
     }
 }
