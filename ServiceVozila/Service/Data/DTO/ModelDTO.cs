@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Service.Data.DTO
+﻿namespace ServiceVozila.Service.Data.DTO
 {
-    abstract class DTOModel
+    abstract class ModelDTO
     {
         public int Id { get; set; }
         public int MakeId { get; set; }
