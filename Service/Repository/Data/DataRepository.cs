@@ -40,7 +40,7 @@ namespace Service.Repository.Data
             var Name = new SqlParameter("@Name", podatak.Name);
             var Abrv = new SqlParameter("@Abrv", podatak.Abrv);
 
-            DbContext.Database.ExecuteSqlCommand("exec dbo.InsertPodaci @Id, @Name, @Abrv",
+            ServiceContext.ExecuteSqlCommand("exec dbo.InsertPodaci @Id, @Name, @Abrv",
                                                                           Id, Name, Abrv);
         }
 
