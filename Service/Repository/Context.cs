@@ -17,5 +17,10 @@ namespace Service.Repository
         {
             throw new NotImplementedException();
         }
+
+        internal static void ExecuteSqlCommand(string v, SqlParameter id, SqlParameter name, SqlParameter abrv)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

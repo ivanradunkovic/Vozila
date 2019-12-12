@@ -50,5 +50,15 @@ namespace Service.Service.Data
                 }
             }
         }
+
+        public void SaveFile(List<DataDTO> podaciDTO)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        List<DataDTO> IDataService.LoadFile(string path)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
