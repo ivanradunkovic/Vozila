@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila", "Vozila\Vozila.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{9EE39B57-C5E3-47A5-BA16-96E550461EB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Map", "Map\Map.csproj", "{261FC79A-7171-43F3-AED6-6E1BEF13B377}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9EE39B57-C5E3-47A5-BA16-96E550461EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EE39B57-C5E3-47A5-BA16-96E550461EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EE39B57-C5E3-47A5-BA16-96E550461EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{261FC79A-7171-43F3-AED6-6E1BEF13B377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261FC79A-7171-43F3-AED6-6E1BEF13B377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261FC79A-7171-43F3-AED6-6E1BEF13B377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261FC79A-7171-43F3-AED6-6E1BEF13B377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
