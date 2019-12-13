@@ -8,11 +8,11 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Map
 {
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddMvc();
-        services.AddAutoMapper();
-    }
+    //public void configureservices(iservicecollection services)        //Error CS0246 i CS0116
+    //{                                                                 //Dok nije zakomentirano error postoji
+    //    services.addmvc();                                            //Rađeno kako je navedeno u AutoMapper tutorialu
+    //    services.addautomapper();
+    //}
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -23,7 +23,7 @@ namespace Map
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public static void ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -37,7 +37,7 @@ namespace Map
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public static void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
