@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Data.SqlClient;
-using Service.Model;
 
 namespace Service.Repository
 {
@@ -13,12 +12,12 @@ namespace Service.Repository
         {
 
         }
-        internal static void ExecuteSqlCommand(SqlParameter id, SqlParameter name, SqlParameter abrv)
+        internal static void ExecuteSqlCommand(SqlParameter Id, SqlParameter Name, SqlParameter Abrv)
         {
             throw new NotImplementedException();
         }
 
-        internal static void ExecuteSqlCommand(string v, SqlParameter id, SqlParameter name, SqlParameter abrv)
+        internal static void ExecuteSqlCommand(string v, SqlParameter Id, SqlParameter MakeId, SqlParameter Name, SqlParameter Abrv)
         {
             throw new NotImplementedException();
         }

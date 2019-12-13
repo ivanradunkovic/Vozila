@@ -5,6 +5,6 @@ namespace Service.Service.Data
     public interface IDataService
     {
         List<DataDTO> LoadFile(string path);
-        void SaveFile(List<DataDTO> podaciDTO);
+        void SaveFile(List<DataDTO> dataDTO);
     }
 }

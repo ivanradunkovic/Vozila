@@ -10,12 +10,12 @@ namespace Service.Service.Data
 {
     public class DataService : IDataService
     {
-        private readonly IDataRepository _podaciRepository;
+        private readonly IDataRepository _makeModelRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public DataService(IDataRepository podaciRepository, IUnitOfWork unitOfWork)
+        public DataService(IDataRepository makeModelRepository, IUnitOfWork unitOfWork)
         {
-            _podaciRepository = podaciRepository;
+            _makeModelRepository = makeModelRepository;
             _unitOfWork = unitOfWork;
         }
 
@@ -34,14 +34,14 @@ namespace Service.Service.Data
             }
         }
 
-        public void SaveFile(List<DTO.DataDTO> podaciDTO)
+        public void SaveFile(List<DTO.DataDTO> dataDTO)
         {
-            foreach (var row in podaciDTO)
+            foreach (var row in dataDTO)
             {
                 var isValid = int.TryParse(row.Name, out int result);
                 if (isValid)
                 {
-                    _podaciRepository.InsertWithProcedure(new Model.Data.Data
+                    _makeModelRepository.InsertWithProcedure(new Model.Data.Data
                     {
                         Id = row.Id,
                         Name = row.Name,
@@ -51,7 +51,7 @@ namespace Service.Service.Data
             }
         }
 
-        public void SaveFile(List<DataDTO> podaciDTO)
+        public void SaveFile(List<DataDTO> dataDTO)
         {
             throw new System.NotImplementedException();
         }
