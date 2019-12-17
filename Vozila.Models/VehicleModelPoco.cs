@@ -15,7 +15,6 @@ namespace Vozila.Models
 
         public Guid VehicleMakeId { get; set; }
 
-        //[Required(ErrorMessage = "Enter name of the vehicle")]
         public string Name { get; set; }
 
         public string Abrv { get; set; }

@@ -1,4 +1,10 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.Entity;
+using Vozila.Models;
 using Vozila.DAL.Entities;
 using Vozila.DAL.Mapping;
 
@@ -7,7 +13,7 @@ namespace Vozila.DAL
     public class VehicleContext : DbContext
     {
         public VehicleContext()
-            : base("VehicleDb")
+            : base("VozilaDb")
         {
             Database.SetInitializer<VehicleContext>(new VehicleDbInitializer());
         }

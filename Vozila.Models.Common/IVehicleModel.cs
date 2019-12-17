@@ -10,6 +10,7 @@ namespace Vozila.Models.Common
     {
      
         Guid Id { get; set; }
+
         Guid VehicleMakeId { get; set; }
 
         string Name { get; set; }
