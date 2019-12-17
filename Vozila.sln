@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.DAL", "Vozila.DAL\Vo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Models", "Vozila.Models\Vozila.Models.csproj", "{32E477B5-B6D1-42B8-A96B-1B831440DA3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Common", "Vozila.Common\Vozila.Common.csproj", "{652FD734-451C-4371-94F3-D78A8A2490E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Models.Common", "Vozila.Models.Common\Vozila.Models.Common.csproj", "{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{32E477B5-B6D1-42B8-A96B-1B831440DA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32E477B5-B6D1-42B8-A96B-1B831440DA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32E477B5-B6D1-42B8-A96B-1B831440DA3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652FD734-451C-4371-94F3-D78A8A2490E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652FD734-451C-4371-94F3-D78A8A2490E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652FD734-451C-4371-94F3-D78A8A2490E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652FD734-451C-4371-94F3-D78A8A2490E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

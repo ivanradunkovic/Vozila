@@ -8,9 +8,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Vozila.Models
 {
-    /// <summary>
-    /// Vehicle model class.
-    /// </summary>
     public class VehicleModelPoco : IVehicleModel //POCO koristim jer je to C# objekt, neće nasljediti ništa od EF-a
     {
   
@@ -23,10 +20,6 @@ namespace Vozila.Models
 
         public string Abrv { get; set; }
 
-
-        /// <summary>
-        /// Gets or sets maker of the vehicle.
-        /// </summary>
         public virtual IVehicleMake VehicleMake { get; set; }
 
     }

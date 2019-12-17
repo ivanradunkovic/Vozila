@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.Entity;
-using Vozila.Models;
 using Vozila.DAL.Entities;
 
 namespace Vozila.DAL
@@ -27,7 +22,7 @@ namespace Vozila.DAL
                 Name = "Ford",
                 Abrv = "Ford"
             };
-            context.VehicleMakers.Add(Ford);
+            context.VehicleMakes.Add(Ford);
 
             var Volkswagen = new VehicleMake()
             {
@@ -35,7 +30,7 @@ namespace Vozila.DAL
                 Name = "Volkwagen",
                 Abrv = "VW"
             };
-            context.VehicleMakers.Add(Volkswagen);
+            context.VehicleMakes.Add(Volkswagen);
 
             var Hyundai = new VehicleMake()
             {
@@ -43,7 +38,7 @@ namespace Vozila.DAL
                 Name = "Hyundai",
                 Abrv = "Hyundai"
             };
-            context.VehicleMakers.Add(Hyundai);
+            context.VehicleMakes.Add(Hyundai);
 
             var GeneralMotors = new VehicleMake()
             {
@@ -51,22 +46,22 @@ namespace Vozila.DAL
                 Name = "General Motors",
                 Abrv = "GM"
             };
-            context.VehicleMakers.Add(GeneralMotors);
+            context.VehicleMakes.Add(GeneralMotors);
 
             for (int i = 0; i < 15; i++)
             {
                 var Car1 = new VehicleModel()
                 {
                     Id = Guid.NewGuid(),
-                    Name = "Škoda",
-                    Abrv = "Škoda"
+                    Name = "X5",
+                    Abrv = "BMW"
                 };
 
                 var Car2 = new VehicleModel()
                 {
                     Id = Guid.NewGuid(),
-                    Name = "Mercedes-Benz",
-                    Abrv = "Mercedes"
+                    Name = "Corsa",
+                    Abrv = "Ford"
                 };
 
                 context.VehicleModels.Add(Car1);

@@ -15,6 +15,6 @@ namespace Vozila.DAL.Entities
 
         public string Abrv { get; set; }
 
-        public ICollection<VehicleModel> VeehicleModels { get; set; }
+        public ICollection<VehicleModel> VehicleModels { get; set; }
     }
 }

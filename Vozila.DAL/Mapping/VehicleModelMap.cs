@@ -16,13 +16,13 @@ namespace Vozila.DAL.Mapping
             this.HasKey(t => t.Id);
 
             this.Property(t => t.Id).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            this.Property(t => t.MakeId);
+            this.Property(t => t.VehicleMakeId).IsRequired();
             this.Property(t => t.Name).IsRequired();
             this.Property(t => t.Abrv);
 
             this.ToTable("VehicleModels");
 
-            this.HasRequired(t => t.VehicleMake).WithMany(c => c.VeehicleModels)
+            this.HasRequired(t => t.VehicleMake).WithMany(c => c.VehicleModels)
                 .HasForeignKey(t => t.VehicleMakeId).WillCascadeOnDelete(false);
         }
 
