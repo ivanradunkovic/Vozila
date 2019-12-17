@@ -128,7 +128,7 @@ C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\System.Web.WebPages.Razor.xml
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Newtonsoft.Json.xml
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Antlr3.Runtime.pdb
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csprojAssemblyReference.cache
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csproj.CopyComplete
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.dll
 C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.pdb
+C:\Users\Ivan\Projekti\Vozila\Vozila\Vozila\obj\Debug\Vozila.csprojAssemblyReference.cache
