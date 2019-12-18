@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Vozila.DAL.Entities;
+﻿using Vozila.DAL.Entities;
 using Vozila.Models;
 using Vozila.Models.Common;
 using AutoMapper;

@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Vozila.Models.Common;
 
 namespace Vozila.Services.Common
 {
-    public interface IMakerService
+    public interface IMakeService
     {
-        Task<IEnumerable<IVehicleMake>> GetMakersAsync();
+        Task<IEnumerable<IVehicleMake>> GetMakesAsync();
     
         /// <param name="id">Id.</param>
     
-        Task<IVehicleMake> GetMakerAsync(Guid id);
+        Task<IVehicleMake> GetMakeAsync(Guid id);
 
     }
 }

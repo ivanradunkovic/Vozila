@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Vozila.Repository;
 using Vozila.Models.Common;
-using Vozila.Services.Common;
 using Vozila.Repository.Common;
 
 namespace Vozila.Service
 {
-    public class MakerService : IMakeService
+    public class MakeService : IMakeService
     {
         
         private IMakeRepository makeRepository;

@@ -61,6 +61,10 @@
       <Project>{32e477b5-b6d1-42b8-a96b-1b831440da3c}</Project>
       <Name>Vozila.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Vozila.Repository.Common\Vozila.Repository.Common.csproj">
+      <Project>{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}</Project>
+      <Name>Vozila.Repository.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
