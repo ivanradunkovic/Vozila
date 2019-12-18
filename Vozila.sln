@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Services.Common", "V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Repository.Common", "Vozila.Repository.Common\Vozila.Repository.Common.csproj", "{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Repository", "Vozila.Repository\Vozila.Repository.csproj", "{836BCAA3-0BA1-4875-B605-EF1AD146049F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836BCAA3-0BA1-4875-B605-EF1AD146049F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836BCAA3-0BA1-4875-B605-EF1AD146049F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836BCAA3-0BA1-4875-B605-EF1AD146049F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836BCAA3-0BA1-4875-B605-EF1AD146049F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
