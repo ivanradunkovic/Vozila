@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Common", "Vozila.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Models.Common", "Vozila.Models.Common\Vozila.Models.Common.csproj", "{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Service", "Vozila.Service\Vozila.Service.csproj", "{25668869-831A-449B-9311-B20061435A5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Services", "Vozila.Service\Vozila.Services.csproj", "{25668869-831A-449B-9311-B20061435A5B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Services.Common", "Vozila.Services.Common\Vozila.Services.Common.csproj", "{CC0EDC05-345E-44B3-A754-A456562B7089}"
 EndProject

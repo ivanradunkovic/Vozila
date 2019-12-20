@@ -53,6 +53,10 @@
       <Project>{652FD734-451C-4371-94F3-D78A8A2490E5}</Project>
       <Name>Vozila.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Vozila.DAL\Vozila.DAL.csproj">
+      <Project>{f4dcec74-00bb-476d-be87-1218c6f6386c}</Project>
+      <Name>Vozila.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vozila.Models.Common\Vozila.Models.Common.csproj">
       <Project>{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}</Project>
       <Name>Vozila.Models.Common</Name>
@@ -65,6 +69,9 @@
       <Project>{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}</Project>
       <Name>Vozila.Repository.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

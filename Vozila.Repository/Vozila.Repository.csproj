@@ -91,9 +91,9 @@
       <Project>{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}</Project>
       <Name>Vozila.Repository.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Vozila.Service\Vozila.Service.csproj">
+    <ProjectReference Include="..\Vozila.Service\Vozila.Services.csproj">
       <Project>{25668869-831a-449b-9311-b20061435a5b}</Project>
-      <Name>Vozila.Service</Name>
+      <Name>Vozila.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
