@@ -10,7 +10,7 @@ namespace Vozila.Services.Common
 
     public interface IVehicleService
     {
-       
+
         /// <param name="id">Id.</param>
         Task<IVehicleModel> GetVehicleAsync(Guid id);
 

@@ -4,7 +4,7 @@ namespace Vozila.Models.Common
 {
     public interface IVehicleModel
     {
-     
+
         Guid Id { get; set; }
 
         Guid VehicleMakeId { get; set; }

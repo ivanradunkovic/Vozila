@@ -66,11 +66,21 @@
     <Compile Include="Mapping\VehicleModelMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VehicleContext.cs" />
-    <Compile Include="VehicleDbInitializer.cs" />
+    <Compile Include="VehicleInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vozila.Models.Common\Vozila.Models.Common.csproj">
+      <Project>{f64e9d20-2db2-4dd2-989b-1b3245c0f952}</Project>
+      <Name>Vozila.Models.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vozila.Models\Vozila.Models.csproj">
+      <Project>{32e477b5-b6d1-42b8-a96b-1b831440da3c}</Project>
+      <Name>Vozila.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

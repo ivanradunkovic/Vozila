@@ -13,7 +13,7 @@ namespace Vozila.DAL.Mapping
 
             this.Property(t => t.Id).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             this.Property(t => t.Name).IsRequired();
-            this.Property(t => t.Abrv);  
+            this.Property(t => t.Abrv);
             this.ToTable("VehicleMakes");
         }
 

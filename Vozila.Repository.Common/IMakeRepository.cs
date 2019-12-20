@@ -8,7 +8,7 @@ namespace Vozila.Repository.Common
 
     public interface IMakeRepository
     {
-      
+
         /// <param name="id">Id.</param>
 
         Task<IVehicleMake> GetMakeAsync(Guid id);

@@ -5,7 +5,7 @@ namespace Vozila.Models
 {
     public class VehicleModelPoco : IVehicleModel //POCO koristim jer je to C# objekt, neće nasljediti ništa od EF-a
     {
-  
+
         public Guid Id { get; set; }
 
         public Guid VehicleMakeId { get; set; }

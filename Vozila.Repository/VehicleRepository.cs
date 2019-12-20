@@ -33,7 +33,7 @@ namespace Vozila.Repository
     
         public async Task<IVehicleModel> GetVehicleAsync(Guid id)
         {
-            return mapper.Map<VehicleModelPoco>(await vehicleContext.Models.FindAsync(id));
+            return mapper.Map<VehicleModelPoco>(await vehicleContext.VehicleModels.FindAsync(id));
         }
      
         /// <param name="paging">Paging.</param>
@@ -42,7 +42,7 @@ namespace Vozila.Repository
         
         public async Task<IEnumerable<IVehicleModel>> GetVehiclesAsync(IPagingParameters paging, IVehicleFilter filterVehicle, ISortingParameters sorting)
         {
-            var listOfVehicles = await vehicleContext.Models.ToListAsync();
+            var listOfVehicles = await vehicleContext.VehicleModels.ToListAsync();
 
             var filteredListOfVehicles = listOfVehicles
                 .Where(item => String.IsNullOrEmpty(filterVehicle.FindVehicle) ? item != null : item.Name.Contains(filterVehicle.FindVehicle))
@@ -62,7 +62,7 @@ namespace Vozila.Repository
         {
             vehicleModel.Id = Guid.NewGuid();
             vehicleModel.Abrv = vehicleModel.Name.Substring(0, 3);
-            vehicleContext.Models.Add(mapper.Map<DAL.Entities.VehicleModel>(vehicleModel));
+            vehicleContext.VehicleModels.Add(mapper.Map<DAL.Entities.VehicleModel>(vehicleModel));
 
             return vehicleContext.SaveChangesAsync();
         }
@@ -79,8 +79,8 @@ namespace Vozila.Repository
         
         public Task DeleteVehicleAsync(Guid id)
         {
-            var oneVehicle = vehicleContext.Models.Find(id);
-            vehicleContext.Models.Remove(oneVehicle);
+            var oneVehicle = vehicleContext.VehicleModels.Find(id);
+            vehicleContext.VehicleModels.Remove(oneVehicle);
 
             return vehicleContext.SaveChangesAsync();
         }

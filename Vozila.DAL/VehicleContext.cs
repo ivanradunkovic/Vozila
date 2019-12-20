@@ -12,12 +12,12 @@ namespace Vozila.DAL
             Database.SetInitializer<VehicleContext>(new VehicleDbInitializer());
         }
 
-        public virtual DbSet<VehicleMake> Makes { get; set; }
+        public virtual DbSet<VehicleMake> VehicleMakes { get; set; }
 
-        public virtual DbSet<VehicleModel> Models { get; set; }
+        public virtual DbSet<VehicleModel> VehicleModels { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {  
+        {
             modelBuilder.Configurations.Add(new VehicleMakeMap());
             modelBuilder.Configurations.Add(new VehicleModelMap());
 

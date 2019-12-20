@@ -13,12 +13,12 @@ namespace Vozila.Services
 
     public class VehicleService : IVehicleService
     {
-        
+
         private IVehicleRepository vehicleRepository;
 
         public VehicleService()
         {
-            vehicleRepository = new VehicleRepository();        
+            vehicleRepository = new VehicleRepository();
         }
 
         /// <param name="id">Id.</param>
