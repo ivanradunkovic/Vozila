@@ -25,14 +25,14 @@ namespace Vozila.Repository
             mapper = AutoMapperMaps.GetMapper();
         }
 
-        public async Task<IEnumerable<IVehicleMake>> GetMakersAsync()
+        public async Task<IEnumerable<IVehicleMake>> GetMakesAsync()
         {
             return mapper.Map<IEnumerable<VehicleMakePoco>>(await vehicleContext.VehicleMakes.ToListAsync());
         }
  
         /// <param name="id">Id.</param>
        
-        public async Task<IVehicleMake> GetMakerAsync(Guid id)
+        public async Task<IVehicleMake> GetMakeAsync(Guid id)
         {
             return mapper.Map<VehicleMakePoco>(await vehicleContext.VehicleMakes.FindAsync(id));
         }

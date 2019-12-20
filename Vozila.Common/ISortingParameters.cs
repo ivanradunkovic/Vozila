@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vozila.Common
+﻿namespace Vozila.Common
 {
     public interface ISortingParameters
     {
