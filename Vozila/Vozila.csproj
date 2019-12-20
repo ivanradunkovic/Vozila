@@ -233,8 +233,6 @@
     <Compile Include="Controllers\ModelController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
-    <Compile Include="DAL\VehicleContext.cs" />
-    <Compile Include="DAL\VehicleInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -287,7 +285,40 @@
     <Content Include="Views\Model\Edit.cshtml" />
     <Content Include="Views\Model\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Vozila.Common\Vozila.Common.csproj">
+      <Project>{652FD734-451C-4371-94F3-D78A8A2490E5}</Project>
+      <Name>Vozila.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vozila.DAL\Vozila.DAL.csproj">
+      <Project>{F4DCEC74-00BB-476D-BE87-1218C6F6386C}</Project>
+      <Name>Vozila.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vozila.Models.Common\Vozila.Models.Common.csproj">
+      <Project>{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}</Project>
+      <Name>Vozila.Models.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vozila.Models\Vozila.Models.csproj">
+      <Project>{32E477B5-B6D1-42B8-A96B-1B831440DA3C}</Project>
+      <Name>Vozila.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vozila.Repository.Common\Vozila.Repository.Common.csproj">
+      <Project>{dde4e2f4-57ae-438c-9070-aba0bd974b95}</Project>
+      <Name>Vozila.Repository.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vozila.Repository\Vozila.Repository.csproj">
+      <Project>{836bcaa3-0ba1-4875-b605-ef1ad146049f}</Project>
+      <Name>Vozila.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vozila.Services.Common\Vozila.Services.Common.csproj">
+      <Project>{20F67682-03C0-4AAA-ABBA-861A86644103}</Project>
+      <Name>Vozila.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vozila.Services\Vozila.Services.csproj">
+      <Project>{667e6bb3-4777-4f64-9530-da3e92421ede}</Project>
+      <Name>Vozila.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

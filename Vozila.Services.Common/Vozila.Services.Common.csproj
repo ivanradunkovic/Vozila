@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CC0EDC05-345E-44B3-A754-A456562B7089}</ProjectGuid>
+    <ProjectGuid>{20F67682-03C0-4AAA-ABBA-861A86644103}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Vozila.Services.Common</RootNamespace>
@@ -58,21 +58,6 @@
       <Project>{32e477b5-b6d1-42b8-a96b-1b831440da3c}</Project>
       <Name>Vozila.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Vozila.Repository.Common\Vozila.Repository.Common.csproj">
-      <Project>{dde4e2f4-57ae-438c-9070-aba0bd974b95}</Project>
-      <Name>Vozila.Repository.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Vozila.Repository\Vozila.Repository.csproj">
-      <Project>{836bcaa3-0ba1-4875-b605-ef1ad146049f}</Project>
-      <Name>Vozila.Repository</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Vozila.Service\Vozila.Services.csproj">
-      <Project>{25668869-831a-449b-9311-b20061435a5b}</Project>
-      <Name>Vozila.Services</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

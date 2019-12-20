@@ -12,8 +12,7 @@ namespace Vozila.Repository.Common
         /// <param name="id">Id.</param>
 
         Task<IVehicleMake> GetMakeAsync(Guid id);
- 
-        Task<IEnumerable<IVehicleMake>> GetMakeAsync();
+
         Task<IEnumerable<IVehicleMake>> GetMakesAsync();
     }
 }

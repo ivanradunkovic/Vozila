@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
+using Vozila.Repository.Mapper;
 
-namespace Vozila.Repository.Mapper
+namespace Vozila.Repository.Mapping
 {
     public static class AutoMapperMaps
     {
@@ -15,7 +16,7 @@ namespace Vozila.Repository.Mapper
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.AddProfile<Mappings>(); 
+                cfg.AddProfile<Mappings>();
             });
 
             mapper = config.CreateMapper();

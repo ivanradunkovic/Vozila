@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila", "Vozila\Vozila.csproj", "{74231518-9759-429D-A177-89DB935EBC52}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.DAL", "Vozila.DAL\Vozila.DAL.csproj", "{F4DCEC74-00BB-476D-BE87-1218C6F6386C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Models", "Vozila.Models\Vozila.Models.csproj", "{32E477B5-B6D1-42B8-A96B-1B831440DA3C}"
@@ -13,13 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Common", "Vozila.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Models.Common", "Vozila.Models.Common\Vozila.Models.Common.csproj", "{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Services", "Vozila.Service\Vozila.Services.csproj", "{25668869-831A-449B-9311-B20061435A5B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Services.Common", "Vozila.Services.Common\Vozila.Services.Common.csproj", "{CC0EDC05-345E-44B3-A754-A456562B7089}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Repository.Common", "Vozila.Repository.Common\Vozila.Repository.Common.csproj", "{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Repository", "Vozila.Repository\Vozila.Repository.csproj", "{836BCAA3-0BA1-4875-B605-EF1AD146049F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Services", "Vozila.Services\Vozila.Services.csproj", "{667E6BB3-4777-4F64-9530-DA3E92421EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila.Services.Common", "Vozila.Services.Common\Vozila.Services.Common.csproj", "{20F67682-03C0-4AAA-ABBA-861A86644103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vozila", "Vozila\Vozila.csproj", "{74231518-9759-429D-A177-89DB935EBC52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{74231518-9759-429D-A177-89DB935EBC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74231518-9759-429D-A177-89DB935EBC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74231518-9759-429D-A177-89DB935EBC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74231518-9759-429D-A177-89DB935EBC52}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4DCEC74-00BB-476D-BE87-1218C6F6386C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4DCEC74-00BB-476D-BE87-1218C6F6386C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4DCEC74-00BB-476D-BE87-1218C6F6386C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,14 +43,6 @@ Global
 		{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F64E9D20-2DB2-4DD2-989B-1B3245C0F952}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25668869-831A-449B-9311-B20061435A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25668869-831A-449B-9311-B20061435A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25668869-831A-449B-9311-B20061435A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25668869-831A-449B-9311-B20061435A5B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC0EDC05-345E-44B3-A754-A456562B7089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC0EDC05-345E-44B3-A754-A456562B7089}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC0EDC05-345E-44B3-A754-A456562B7089}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC0EDC05-345E-44B3-A754-A456562B7089}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDE4E2F4-57AE-438C-9070-ABA0BD974B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +51,18 @@ Global
 		{836BCAA3-0BA1-4875-B605-EF1AD146049F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{836BCAA3-0BA1-4875-B605-EF1AD146049F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{836BCAA3-0BA1-4875-B605-EF1AD146049F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667E6BB3-4777-4F64-9530-DA3E92421EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667E6BB3-4777-4F64-9530-DA3E92421EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667E6BB3-4777-4F64-9530-DA3E92421EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667E6BB3-4777-4F64-9530-DA3E92421EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F67682-03C0-4AAA-ABBA-861A86644103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F67682-03C0-4AAA-ABBA-861A86644103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F67682-03C0-4AAA-ABBA-861A86644103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F67682-03C0-4AAA-ABBA-861A86644103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74231518-9759-429D-A177-89DB935EBC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74231518-9759-429D-A177-89DB935EBC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74231518-9759-429D-A177-89DB935EBC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74231518-9759-429D-A177-89DB935EBC52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
