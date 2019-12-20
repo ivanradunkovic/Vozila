@@ -4,9 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
+using Vozila.DAL;
 using Vozila.Models;
 using PagedList;
-using Vozila.DAL;
 
 namespace Vozila.Controllers
 {

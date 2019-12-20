@@ -33,7 +33,7 @@ namespace Vozila.Repository
     
         public async Task<IVehicleModel> GetVehicleAsync(Guid id)
         {
-            return mapper.Map<VehicleModelPoco>(await vehicleContext.VehicleModels.FindAsync(id));
+            return mapper.Map<VehicleModelPoco>(await vehicleContext.Models.FindAsync(id));
         }
      
         /// <param name="paging">Paging.</param>
@@ -42,13 +42,13 @@ namespace Vozila.Repository
         
         public async Task<IEnumerable<IVehicleModel>> GetVehiclesAsync(IPagingParameters paging, IVehicleFilter filterVehicle, ISortingParameters sorting)
         {
-            var listOfVehicles = await vehicleContext.VehicleModels.ToListAsync();
+            var listOfVehicles = await vehicleContext.Models.ToListAsync();
 
             var filteredListOfVehicles = listOfVehicles
                 .Where(item => String.IsNullOrEmpty(filterVehicle.FindVehicle) ? item != null : item.Name.Contains(filterVehicle.FindVehicle))
                 .Where(item => filterVehicle.MakeId == Guid.Empty ? item != null : item.VehicleMakeId == filterVehicle.MakeId);
 
-            var sortedList = filteredListOfVehicles.OrderBy(sorting.SortField + " " + sorting.SortOrder);
+            var sortedList = filteredListOfVehicles.OrderByDescending(a => a.Id);
             var mappedList = mapper.Map<List<VehicleModelPoco>>(sortedList);
             var pagedList = mappedList.ToPagedList(paging.PageNumber, paging.PageSize);
             var pagedListOfVehicles = new StaticPagedList<VehicleModelPoco>(pagedList, pagedList.GetMetaData());
@@ -62,7 +62,7 @@ namespace Vozila.Repository
         {
             vehicleModel.Id = Guid.NewGuid();
             vehicleModel.Abrv = vehicleModel.Name.Substring(0, 3);
-            vehicleContext.VehicleModels.Add(mapper.Map<DAL.Entities.VehicleModel>(vehicleModel));
+            vehicleContext.Models.Add(mapper.Map<DAL.Entities.VehicleModel>(vehicleModel));
 
             return vehicleContext.SaveChangesAsync();
         }
@@ -79,8 +79,8 @@ namespace Vozila.Repository
         
         public Task DeleteVehicleAsync(Guid id)
         {
-            var oneVehicle = vehicleContext.VehicleModels.Find(id);
-            vehicleContext.VehicleModels.Remove(oneVehicle);
+            var oneVehicle = vehicleContext.Models.Find(id);
+            vehicleContext.Models.Remove(oneVehicle);
 
             return vehicleContext.SaveChangesAsync();
         }

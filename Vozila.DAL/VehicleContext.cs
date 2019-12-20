@@ -7,14 +7,14 @@ namespace Vozila.DAL
     public class VehicleContext : DbContext
     {
         public VehicleContext()
-            : base("VehicleDb")
+            : base("VehicleContext")
         {
             Database.SetInitializer<VehicleContext>(new VehicleDbInitializer());
         }
 
-        public virtual DbSet<VehicleMake> VehicleMakes { get; set; }
+        public virtual DbSet<VehicleMake> Makes { get; set; }
 
-        public virtual DbSet<VehicleModel> VehicleModels { get; set; }
+        public virtual DbSet<VehicleModel> Models { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {  
