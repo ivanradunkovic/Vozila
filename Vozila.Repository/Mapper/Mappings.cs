@@ -7,15 +7,17 @@ namespace Vozila.Repository.Mapper
 {
     public class Mappings : Profile
     {
-        protected override void Configure()
+        public Mappings()
         {
-            CreateMap<VehicleModel, VehicleModelPoco>().ReverseMap();
-            CreateMap<VehicleModel, IVehicleModel>().ReverseMap();
-            CreateMap<IVehicleModel, VehicleModelPoco>().ReverseMap();
+            {
+                CreateMap<VehicleModel, VehicleModelPoco>().ReverseMap();
+                CreateMap<VehicleModel, IVehicleModel>().ReverseMap();
+                CreateMap<IVehicleModel, VehicleModelPoco>().ReverseMap();
 
-            CreateMap<VehicleMake, VehicleMakePoco>().ReverseMap();
-            CreateMap<VehicleMake, IVehicleMake>().ReverseMap();
-            CreateMap<IVehicleMake, VehicleMakePoco>().ReverseMap();
+                CreateMap<VehicleMake, VehicleMakePoco>().ReverseMap();
+                CreateMap<VehicleMake, IVehicleMake>().ReverseMap();
+                CreateMap<IVehicleMake, VehicleMakePoco>().ReverseMap();
+            }
         }
     }
 }

@@ -7,7 +7,7 @@ using Vozila.DAL;
 using Vozila.Models;
 using Vozila.Models.Common;
 using Vozila.Repository.Common;
-using Vozila.Repository.Mapper;
+using Vozila.Repository.Mapping;
 
 namespace Vozila.Repository
 {
